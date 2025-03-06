@@ -277,39 +277,39 @@ section{
         }
         
 
-.gadgets .gadgets-slider .box{
+.deals .deals-slider .box{
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 
-.gadgets .gadgets-slider .box .image{
+.deals .deals-slider .box .image{
     height:40rem;
     width:100%;
     overflow: hidden;
 }
 
-.gadgets .gadgets-slider .box .image img{
+.deals .deals-slider .box .image img{
     height:100%;
     width:100%;
     object-fit: cover;
 }
 
-.gadgets .gadgets-slider .box:hover .image img{
+.deals .deals-slider .box:hover .image img{
     transform: scale(1.2);
 }
 
-.gadgets .gadgets-slider .box .icons{
+.deals .deals-slider .box .icons{
     position: absolute;
     top: 0; right: -6rem;
     z-index: 1;
 }
 
-.gadgets .gadgets-slider .box:hover .icons{
+.deals .deals-slider .box:hover .icons{
     right: 1rem;
 }
 
-.gadgets .gadgets-slider .box .icons a{
+.deals .deals-slider .box .icons a{
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
@@ -321,28 +321,28 @@ section{
     display: block;
 }
 
-.gadgets .gadgets-slider .box .icons a:hover{
+.deals .deals-slider .box .icons a:hover{
     background: var(--main-color);
     color:#fff;
 }
 
-.gadgets .gadgets-slider .box .content{
+.deals .deals-slider .box .content{
     padding: 1rem 0;
 }
 
-.gadgets .gadgets-slider .box .content h3{
+.deals .deals-slider .box .content h3{
     font-size: 2.5rem;
     font-weight: normal;
     color:#fff;
 }
 
-.gadgets .gadgets-slider .box .content .subtitle{
+.deals .deals-slider .box .content .subtitle{
     font-size: 2rem;
     font-weight: bolder;
     color:#fff;
 }
 
-.gadgets .gadgets-slider .box .content .subtitle span{
+.deals .deals-slider .box .content .subtitle span{
     font-size: 1.5rem;
     font-weight: normal;
     color:var(--main-color);
