@@ -116,7 +116,7 @@ section{
 
 
 .header .navbar a{
-    font-size: 1.7rem;
+    font-size: 1rem;
     color:#fff;
     margin:0 1rem;
 }
@@ -128,7 +128,7 @@ section{
 
 .header .icons a,
 .header .icons div{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:#fff;
     margin-left: 2rem;
     cursor: pointer;
@@ -204,7 +204,7 @@ section{
 }
 
 .home .home-slider .box .content h3{
-    font-size: 4rem;
+    font-size: 2rem;
     color:#fff;
     transition-delay: .2s;
 }
@@ -212,7 +212,7 @@ section{
 .home .home-slider .box .content p{
   text-align: center;
   
-    font-size: 2rem;
+    font-size: 1rem;
     color:#fff;
     transition-delay: .4s;
     padding:0rem 0;
