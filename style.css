@@ -204,7 +204,7 @@ section{
 }
 
 .home .home-slider .box .content h3{
-    font-size: 3.5rem;
+    font-size: 4rem;
     color:#fff;
     transition-delay: .2s;
 }
@@ -212,7 +212,7 @@ section{
 .home .home-slider .box .content p{
   text-align: center;
   
-    font-size: 1.5rem;
+    font-size: 3rem;
     color:#fff;
     transition-delay: .4s;
     padding:0rem 0;
