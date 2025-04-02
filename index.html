@@ -2,559 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pg Official Tvm</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-
+    <title>Amazon Affiliate Link Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+        #affiliate-link {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
-<!-- header section starts  -->
-
-<header class="header">
-
-   <a href="https://pgofficialtvm.in/" class="logo">
-  <i class="logo">
-    <img src="https://i.ibb.co/1L9qZPJ/20241005-221050.png"> </i> <span> pg official tvm</span></a> 
-
-    <nav class="navbar">
-        <a href="#home" class="active">home</a>
-        <a href="#deals">our products</a>
-        <a href="#about">about</a>
-        <a href="#newlaunches">New Launches</a>
-        <a href="#contact">contact</a>
-        <a href="#blogs">blogs</a>
-    </nav>
-<div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <a href="https://www.amazon.in/shop/pgstudio-allinone?ref_=cm_sw_r_cp_ud_aipsfshop_CYJCPD86WMMFGGGATZKY" class="fas fa-store"></a>
-        <a href="#" class="fas fa-sign-in-alt"></a>
+    <h2>Amazon Affiliate Link Generator</h2>
+    <input type="text" id="product-url" placeholder="Enter Amazon Product Link">
+    <button onclick="generateAffiliateLink()">Generate Affiliate Link</button>
+    <p id="error-message" style="color: red;"></p>
+    <div id="affiliate-link">
+        <p>Your Affiliate Link:</p>
+        <a id="amazon-affiliate-link" href="#" target="_blank"></a>
     </div>
 
-    <form action="/search-results" class="search-form">
-        <input type="search" placeholder="search here..." id="input-box" >
-        <label for="input-box" class="fas fa-search"></label>
-    </form>
-
-
-
-<div class="search-form">
-    <input type="text" placeholder="Search here..." id="search-input">
-    <label id="search-btn">
-        <i class="fas fa-search">Search</i>
-    </label>
-    </div>
-
-
-</header>
-
-<!-- header section ends -->
-
-
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="swiper home-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box" style="background: url(20241007_135755.jpg)">
-                <div class="content">
-                    <h3>Welcome to pg official</h3> 
-                    <p>I’d like to invite you to join PG Official !
-                    <p>Sign up to earn rewards on your Amazon shopping.
-                    <p>It’s simple—just create your account &
-                    <p> Join Now to earn points.</p>
-                    <div class="button">
-                        <a href="https://forms.gle/XPryuWhK7Wisk8MWA" class="btn">Join now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide box" style="background: url(20250321_192510.jpg);">
-
-                <div class="content">
-
-                    <h3>Custom printing with low MOQ, high quality! </h3>
-                    <p>"Seamless online printing for business cards, gifts, and more!"</p>
-                 <div class="button">
-                        <a href="" class="btn">check out</a>
-                    </div>
-                </div>
-            </div>
-
-<div class="swiper-slide box" style="background: url(20241021_011625.jpg);">
-
-                <div class="content">
-
-                    <h3>Recharge Now Without Any Fee </h3>
-                    <p>"Instant Top-up, Power Paid, Seamless Entertainment, Quick Refill"</p>
-                    <div class="button">
-                        <a href="https://amzn.to/4dUP281" class="btn">recharge now</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="swiper-slide box" style="background: url(20241007_191629.jpg);">
-                <div class="content">
-                    <h3>Superfan Savings 69% Energy</h3>
-                    <p>Superfan uses Brush-Less Direct Current (BLDC) motor instead of AC Induction motor in a regular fan. This change saves over 69% electricity while delivering the same comfort</p>
-                    <div class="button">
-                        <a href="https://amzn.to/3ZRJFTC" class="btn">shop now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide box" style="background: url(20241007_192904.jpg);">
-                <div class="content">
-                    <h3>Welcome to Amazon Prime</h3>
-                    <p> Prime membership program offers special benefits including:Latest Bollywood blockbusters, thousands of movies and TV shows, Unlimited FREE 1 day and 2 days shipping, Exclusive shopping deals & selection, Ad-freemusic & more.</p>
-                    <div class="button">
-                        <a href="https://amzn.to/3ZVfJGq" class="btn">Join now</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-    </div>
-
-</section>
-
-<!-- home section ends -->
-<!-- updates section starts -->
-
-<section>
-
-
-  <div class="scrollingtext-container">
-    <div class="scrolling-text">
-      <marquee scrollamount="12" direction=""> Welcome to PG Official TVM!  We're thrilled to have you here! At PG Official TVM, we make shopping easier, smarter, and more rewarding. Just tell us your budget, usage, and requirements, and we'll find the best products for you from Amazon. Plus, every purchase through us earns you coins for exclusive benefits! </marquee>
-    </div>
-  </div>
-
- <!-- updates section ends -->
-
-<!-- gadgets section starts  -->
-
-<section class="deals" id="deals">
-
-    <h1 class="heading"> our <span>products</span> </h1>
-
-    <div class="swiper deals-slider" data-aos="zoom-in">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="https://amzn.to/3QMdoI0" class="fas fa-shopping-cart"></a>
-                    <a href="" class="fas fa-eye"></a>
-                   
-                </div>
-                <div class="image">
-                    <img src="earphones.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Stickers</h3>
-                    <div class="subtitle">  100 stickers only ₹168  </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="https://amzn.to/3Fclrek" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                   
-                </div>
-                <div class="image"> 
-                    <img src="smartwatches.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Smartwatches</h3>
-                    <div class="subtitle"> Monitor Your Health and Stay Active: Budget-Friendly Wearables</div>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="https://amzn.to/3QJJAf5" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                  
-                </div>
-                <div class="image">
-                    <img src="smartphones.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Smartphones</h3>
-                    <div class="subtitle"> Stay Connected: Affordable Smartphones with Great Features </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="https://amzn.to/3F939uC" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                  
-                </div>
-                <div class="image">
-                    <img src="tablets.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Tablets</h3>
-                    <div class="subtitle"> Work or Play on the Go: Budget-Friendly Tablets for Everyday Use </div>
-                </div>
-            </div>
-         
-            <div class="swiper-slide box">
-
-                <div class="icons">
-
-                    <a href="https://amzn.to/4iKL6JZ" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                    
-                </div>
-                <div class="image">
-                    <img src="bluetoothspeackers.jpg" alt=""> 
-                </div>
-                <div class="content">
-                    <h3>Bluetooth Speakers</h3>
-                    <div class="subtitle"> Music Anytime, Anywhere: Portable Bluetooth Speakers on a Budget </div>
-                </div>
-            </div>
-            
-            <div class="swiper-slide box">
-
-                <div class="icons">
-
-                    <a href="https://amzn.to/3FaKFtN" class="fas fa-shopping-cart"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                  
-                </div>
-                <div class="image">
-                    <img src="smarthomedevices.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Smart Home Devices</h3>
-                    <div class="subtitle"> Upgrade Your Home: Budget Smart Devices for Convenience and Control </div>
-                </div>
-            </div>
-            
-
-            <div class="swiper-slide box">
-                <div class="icons">
-                    <a href="https://amzn.to/4bw754J" class="fas fa-shopping-cart"></a>
-                    <a href="" class="fas fa-eye"></a>
-                    
-                </div>
-                <div class="image">
-                    <img src="powerbanks.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Power Banks</h3>
-                    <div class="subtitle"> Power on the Move: Budget Power Banks to Keep You Charged </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- products section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <div class="content" data-aos="fade-right">
-        <h3>about us</h3>
-        <p><b>PG Official TVM – Your Personal Shopping Guide</b></p>
-
-<p>PG Official TVM is an emerging brand dedicated to helping customers find the perfect products from Amazon based on their needs. We simplify your shopping experience by understanding your budget, usage, and specific requirements to recommend the best-suited products for you.</p>
-
-<p>With PG Official TVM, shopping is not just convenient—it’s rewarding! Every purchase made through us earns you coins, bringing you exciting benefits and savings.</p>
-        
-        <div id="readmore">
-            <p>Our service menu includes.</p>
-            <p>✔️ Personalized Product Recommendations – Get the best picks based on your needs.
- <p>✔️ Budget-Based Suggestions – Find top-quality products within your price range.
- <p>✔️ Seamless Purchase Assistance – Hassle-free shopping experience.
- <p>✔️ Earn & Redeem Coins – Enjoy exclusive rewards on every purchase.</p> 
-             <p>Let PG Official TVM make your shopping smarter, easier, and more rewarding! 🚀</p>
-        
-        </div>
-        
-        <div>
-            <a id="readmorebtn" class="btn">read more</a>
-        </div>
-    </div>
-    
-    <script>const readMoreBtn = document.getElementById('readmorebtn');
-        const readMoreContent = document.getElementById('readmore');
-
-        readMoreBtn.addEventListener('click', function() {
-            if (readMoreContent.style.display === "none" || readMoreContent.style.display === "") {
-                readMoreContent.style.display = "block";
-                readMoreBtn.textContent = "read less";
-            } else {
-                readMoreContent.style.display = "none";
-                readMoreBtn.textContent = "read more";
+    <script>
+        async function expandShortLink(shortUrl) {
+            try {
+                let response = await fetch("http://localhost:3000/expand", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ shortUrl })
+                });
+                let data = await response.json();
+                return data.expandedUrl;
+            } catch (error) {
+                console.error("Short link expansion failed:", error);
+                return null;
             }
-        });</script>
-</section>
+        }
 
-<!-- about section ends -->
+        async function generateAffiliateLink() {
+            let productUrl = document.getElementById("product-url").value.trim();
+            document.getElementById("error-message").innerText = "";
 
-<!-- newlaunch section starts  -->
+            if (!productUrl) {
+                document.getElementById("error-message").innerText = "Please enter a valid Amazon product link.";
+                return;
+            }
 
-<section class="newlaunches" id="newlaunches">
+            if (productUrl.includes("amzn.in/")) {
+                let expandedUrl = await expandShortLink(productUrl);
+                if (!expandedUrl) {
+                    document.getElementById("error-message").innerText = "Failed to expand short link. Open it in a browser and copy the full product URL.";
+                    return;
+                }
+                productUrl = expandedUrl;
+            }
 
-    <h1 class="heading"> new <span>launches</span> </h1>
+            try {
+                let url = new URL(productUrl);
+                if (!url.hostname.includes("amazon.")) {
+                    document.getElementById("error-message").innerText = "Invalid Amazon link. Please enter a valid product URL.";
+                    return;
+                }
 
-    <div class="box-container">
-
-        <div class="box" data-aos="fade-right">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-            </div>
-            <div class="image">
-                <img src="image/arrival-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>latest products</h3>
-                <div class="subtitle"> $79.99 <span>$95.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-down">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-            </div>
-            <div class="image">
-                <img src="image/arrival-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>latest products</h3>
-                <div class="subtitle"> $79.99 <span>$95.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-left">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-            </div>
-            <div class="image">
-                <img src="image/arrival-3.gif" alt="">
-            </div>
-            <div class="content">
-                <h3>latest products</h3>
-                <div class="subtitle"> $79.99 <span>$95.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-right">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-share"></a>
-            </div>
-            <div class="image">
-                <img src="image/arrival-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>latest products</h3>
-                <div class="subtitle"> $79.99 <span>$95.99</span> </div>
-            </div>
-        </div>
-
-      
-     
-
-</section>
-
-<!-- arrivals section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <div class="row">
-
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62384.33750598977!2d79.6009485!3d12.2468509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53387c15081497%3A0x20df12ae20e6e12e!2sKollar%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1729698332798!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-
-        <form action="https://api.web3forms.com/submit" method="POST">
-
-            <h3 data-aos="zoom-in">tell us something!</h3>
-                <input type="hidden" name="access_key" value="d6e4baed-9769-4f86-98b1-74cc4d05d99d">
-            <input type="hidden" name="redirect" value="https://youtube.com/@pg_official_tvm?si=gJ2pbzftg1__isZ0">
-            <input data-aos="zoom-in" type="text" name="name" placeholder="your name" class="box" required >
-            <input data-aos="zoom-in" name="email "type="email" placeholder="your email" class="box" required>
-            <input data-aos="zoom-in" name="number" type="number" placeholder="your number" class="box" required>
-            <textarea data-aos="zoom-in" name="message" placeholder="your message" class="box" cols="30" rows="10" required></textarea>
-            <input data-aos="zoom-in" type="submit" value="send message"  class="btn">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<!-- blogs section starts  -->
-
-<section class="blogs" id="blogs">
-
-    <h1 class="heading"> our <span>blogs</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box" data-aos="fade-right">
-            <div class="image">
-                <img src="image/blog-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>How to Choose the Perfect Smartwatch for Your Needs</h3>
-                <p>In today's fast-paced world, a smartwatch is more than just a timepiece—it’s a fitness tracker, a communication tool, and a personal assistant on your wrist. With so many options available, choosing the right smartwatch can be overwhelming. In this guide, we’ll help you find the perfect smartwatch that fits your lifestyle and budget.</p>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-down">
-            <div class="image">
-                <img src="image/blog-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Believe in the Magic of Halloween.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, harum!</p>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-left">
-            <div class="image">
-                <img src="image/blog-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Believe in the Magic of Halloween.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, harum!</p>
-                <a href="#" class="btn">read more</a>
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 1st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer" id="footer">
-
-    <div class="box-container">
-
-
-        <div class="box" data-aos="fade-down">
-            <h3>quick links</h3>
-            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#gadgets"> <i class="fas fa-arrow-right"></i> gadgets </a>
-            <a href="#about"> <i class="fas fa-arrow-right"></i> about </a>
-            <a href="#newlaunches"> <i class="fas fa-arrow-right"></i>new launches  </a>
-            <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
-            <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs </a>
-        </div>
-
-        <div class="box" data-aos="fade-up">
-            <h3>contact us</h3>
-            <a href="tel:+919442947264"> <i class="fas fa-phone"></i> +91-9442947264 </a>
-            <a href="mailto:pgofficialtvm@duck.com"> <i class="fas fa-envelope"></i> pgofficialtvm@duck.com</a>
-            <a href="https://maps.app.goo.gl/mtEknUqWA3ipA1zv7"> <i class="fas fa-map-marker-alt"></i> Kollar, Tindivanam, Tamilnadu, india - 604206 </a>
-        </div>
-
-        <div class="box" data-aos="fade-left">
-            <h3>contact us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-        </div>
-
-    </div>
-
-    <div class="credit"> created by <span>pg official tvm </span> | all rights reserved </div>
-
-</section>
-
-<!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-<!-- custom js file links  -->
-<script src="script.js"></script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-      delay:400,
-      duration:800
-  });
-</script>
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="079077cf-7082-47da-9b95-f41056f6f850";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+                url.searchParams.set("tag", "pgstudio-21");
+                document.getElementById("amazon-affiliate-link").href = url.href;
+                document.getElementById("amazon-affiliate-link").innerText = url.href;
+                document.getElementById("affiliate-link").style.display = "block";
+            } catch (error) {
+                document.getElementById("error-message").innerText = "Invalid URL format. Please enter a valid Amazon product link.";
+            }
+        }
+    </script>
 </body>
 </html>
