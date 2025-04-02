@@ -32,54 +32,24 @@
     </div>
 
     <script>
-        async function expandShortLink(shortUrl) {
-            try {
-                let response = await fetch("http://localhost:3000/expand", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ shortUrl })
-                });
-                let data = await response.json();
-                return data.expandedUrl;
-            } catch (error) {
-                console.error("Short link expansion failed:", error);
-                return null;
-            }
-        }
+     async function expandShortLink(shortLink) {
+    try {
+        const response = await fetch(shortLink, { method: 'HEAD', redirect: 'follow' });
+        return response.url; // The final redirected URL
+    } catch (error) {
+        console.error("Failed to expand short link", error);
+        alert("Failed to expand short link. Open it in a browser and copy the full product URL.");
+        return null;
+    }
+}
 
-        async function generateAffiliateLink() {
-            let productUrl = document.getElementById("product-url").value.trim();
-            document.getElementById("error-message").innerText = "";
+// Usage
+expandShortLink("https://amzn.in/d/18LA364").then(fullURL => {
+    if (fullURL) {
+        console.log("Expanded URL:", fullURL);
+    }
+});
 
-            if (!productUrl) {
-                document.getElementById("error-message").innerText = "Please enter a valid Amazon product link.";
-                return;
-            }
-
-            if (productUrl.includes("amzn.in/")) {
-                let expandedUrl = await expandShortLink(productUrl);
-                if (!expandedUrl) {
-                    document.getElementById("error-message").innerText = "Failed to expand short link. Open it in a browser and copy the full product URL.";
-                    return;
-                }
-                productUrl = expandedUrl;
-            }
-
-            try {
-                let url = new URL(productUrl);
-                if (!url.hostname.includes("amazon.")) {
-                    document.getElementById("error-message").innerText = "Invalid Amazon link. Please enter a valid product URL.";
-                    return;
-                }
-
-                url.searchParams.set("tag", "pgstudio-21");
-                document.getElementById("amazon-affiliate-link").href = url.href;
-                document.getElementById("amazon-affiliate-link").innerText = url.href;
-                document.getElementById("affiliate-link").style.display = "block";
-            } catch (error) {
-                document.getElementById("error-message").innerText = "Invalid URL format. Please enter a valid Amazon product link.";
-            }
-        }
     </script>
 </body>
 </html>
