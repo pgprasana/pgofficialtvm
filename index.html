@@ -12,17 +12,17 @@
 </head>
 <body>
     <h2>Amazon Affiliate Link Generator</h2>
-    <input type="text" id="product-url" placeholder="Paste Amazon Product Link">
+    <input type="text" id="product-url" placeholder="Paste Full Amazon Product Link">
+    <p><b>Note:</b> If you have a short link (amzn.in/xyz), open it in a browser first, then paste the full link here.</p>
     <button onclick="generateAffiliateLink()">Generate Affiliate Link</button>
+    
     <div id="affiliate-link">
         <p>Your Affiliate Link:</p>
         <a id="amazon-affiliate-link" href="#" target="_blank">Buy Now</a>
     </div>
 
-    <iframe id="url-expander" style="display:none;"></iframe>
-
     <script>
-        const AFFILIATE_TAG = "pgstudio-21"; // Replace with your tag
+        const AFFILIATE_TAG = "pgstudio-21"; 
 
         function generateAffiliateLink() {
             let productUrl = document.getElementById("product-url").value.trim();
@@ -31,26 +31,16 @@
                 return;
             }
 
-            // Check if it's a short link
-            if (productUrl.includes("amzn.in")) {
-                let iframe = document.getElementById("url-expander");
-                iframe.src = productUrl;
-                iframe.onload = function() {
-                    let expandedUrl = iframe.contentWindow.location.href;
-                    createAffiliateLink(expandedUrl);
-                };
-            } else {
-                createAffiliateLink(productUrl);
+            try {
+                let url = new URL(productUrl);
+                url.searchParams.set("tag", AFFILIATE_TAG); // Add affiliate tag
+                
+                document.getElementById("amazon-affiliate-link").href = url.href;
+                document.getElementById("amazon-affiliate-link").innerText = "Buy Now with Affiliate Link";
+                document.getElementById("affiliate-link").style.display = "block";
+            } catch (error) {
+                alert("Invalid URL format. Please enter a valid Amazon product link.");
             }
-        }
-
-        function createAffiliateLink(url) {
-            let finalUrl = new URL(url);
-            finalUrl.searchParams.set("tag", AFFILIATE_TAG);
-
-            document.getElementById("amazon-affiliate-link").href = finalUrl.href;
-            document.getElementById("amazon-affiliate-link").innerText = "Buy Now with Affiliate Link";
-            document.getElementById("affiliate-link").style.display = "block";
         }
     </script>
 </body>
