@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PG Official TVM - Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="/logo.png" alt="Logo">
+    <h1>PG Official TVM</h1>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search for products..." id="searchInput">
+    <button onclick="searchProducts()">Search</button>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Product 1">
+      <h3>Smartphone Stand</h3>
+      <p>Perfect for watching videos hands-free.</p>
+      <a href="#">Buy on Amazon</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Product 2">
+      <h3>Wireless Earbuds</h3>
+      <p>Crystal-clear sound and long battery life.</p>
+      <a href="#">Buy on Amazon</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Product 3">
+      <h3>Portable Blender</h3>
+      <p>Make smoothies on the go.</p>
+      <a href="#">Buy on Amazon</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 PG Official TVM. All rights reserved.</p>
+  </div>
+
+  <script>
+    function searchProducts() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        card.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
