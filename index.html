@@ -1,53 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PG Official TVM </title>
-<link rel="icon" type="image/png" href="https://i.ibb.co/gMRVyf4p/20250413-223900.png" sizes="32*32" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pg Official Tvm</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <link rel="icon" type="image/png" href="https://i.ibb.co/gMRVyf4p/20250413-223900.png" sizes="32*32" />
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    
+<!-- header section starts  -->
 
-  <div class="header">
-    <img src="logo.jpeg" alt="Logo">
-    <h1>PG Official TVM</h1>
-  </div>
-<marquee><h3> If you enquire about any product through WhatsApp or live chat, the product you enquired will be listed below. If you proceed to purchase, please inform the PG Official TVM team. This helps us track your order. Once your product is delivered, you will receive a reward from PG Official TVM based on your product category.</h3></marquee>
-  <div class="search-box">
-    <input type="text" placeholder="Search for products..." id="searchInput">
-    <button onclick="searchProducts()">Search</button>
-  </div>
+<header class="header">
 
-  <div class="product-grid" id="productGrid">
+   <a href="#" class="logo">
+  <i class="logo">
+    <img src="https://i.ibb.co/1L9qZPJ/20241005-221050.png"> </i> <span> pg official tvm</span></a> 
 
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/61VzpqDzsDL._SL1500_.jpg" alt="Product 1">
-      <h3>#1 Rechargeable Camping Lights</h3>
-      <p>Waterproof LED Bulb Tent Lights with USB Type C Cable, 3 Modes Hanging Camping Lantern Bulb</p>
-      <a href="https://amzn.to/42uWkvm">Buy on Amazon</a>
+    <nav class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#gadgets"> Spotlight</a> </a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="https://www.amazon.in/shop/pgstudio-allinone?ref_=cm_sw_r_cp_ud_aipsfshop_CYJCPD86WMMFGGGATZKY" class="fas fa-store"></a>
+        
     </div>
 
+    <form action="/search-results" class="search-form">
+        <input type="search" placeholder="search here..." id="input-box" >
+        <label for="input-box" class="fas fa-search"></label>
+    </form>
+
+
+
+<div class="search-form">
+    <input type="text" placeholder="Search here..." id="search-input">
+    <label id="search-btn">
+        <i class="fas fa-search">Search</i>
+    </label>
+</div>
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box" style="background: url(/20241007_135755.jpg)">
+                <div class="content">
+                    <h3>Welcome to pg official Tvm</h3> 
+                    
+<p>We are helps you find the best Amazon products tailored to your needs, budget, and preferences.
+<p> We make shopping simple, smart, and 
+<p>  rewarding—earn coins with every purchase and 
+ <p> enjoy exclusive benefits!
+
+
+
+        
+                    
+                </div>
+            </div>
+
+<div class="swiper-slide box" style="background: url(/20241021_011625.jpg);">
+
+                <div class="content">
+
+                    <h3>Recharge Now Without Any Fee
+
+</h3>
+                    <p>"Instant Top-up, Power Paid, Seamless Entertainment, Quick Refill" </p>
+                    <div class="button">
+                        <a href="https://amzn.to/4dUP281" class="btn">recharge now</a>
+                    </div>
+                </div>
+            </div
+>
+
+
+            <div class="swiper-slide box" style="background: url(/20241007_191629.jpg);">
+                <div class="content">
+                    <h3>Superfan Savings 69% Energy
+
+</h3>
+                    <p>Superfan uses Brush-Less Direct Current (BLDC) motor instead of AC Induction motor in a regular fan. This change saves over 69% electricity while delivering the same comfort</p>
+                    <div class="button">
+                        <a href="https://amzn.to/3ZRJFTC" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- updates section starts -->
+
+<section>
+
+
+  <div class="scrollingtext-container">
+    <div class="scrolling-text">
+      <marquee scrollamount="8" direction="">
+Enquire about any product via WhatsApp or live chat, and it’ll be listed in our Spotlight. If you buy it, let the PG Official TVM team know so we can track your order. Once it’s delivered, you’ll earn a reward based on the product category!
+
+Contact us: pgofficialtvm@duck.com
+
+ </marquee>
+    </div>
+  </div>
+
+ <!-- updates section ends -->
+
+<!-- spotlight section starts  -->
+
+<section class="spotlight" id="spotlight">
+
+    <h1 class="heading">Spot<span>Light</span> </h1>
+
+    <div class="swiper spotlight-slider" data-aos="zoom-in">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="https://amzn.to/42lA4p6" class="fas fa-shopping-cart"></a>
+                    <a href="" class="fas fa-book"></a>
+                    <a href="https://wa.me/<6374981563>?text=<Set Price Alert For Spotlight001>" class="fas fa-bell"></a>
+                </div>
+                <div class="image">
+                    <img src="https://m.media-amazon.com/images/I/41Bu8U1ARBL._SL1200_.jpg" alt="">
+                </div>
+                
+                <div class="content">
+                    <h3>Portronics Adapto 70 33W Fast Charger Adapter with Dual Output</h3>
+                    <h2>Current Price: ₹504/-</h2>
+                    <h1>⬆️ High: ₹648/- | ↕️ Avg: ₹571/- | ⬇️Low :₹503/-</h1>
+                    
+                    <div class="sub">Spotlight Genarated By Prasanna  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- spotlight section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="content" data-aos="fade-right">
+        <h3>about us</h3>
+        <p> PG Official TVM is your personal shopping assistant, helping you find the perfect products based on your needs, purpose, and budget. Whether you’re searching for something specific or exploring options, our team is here to guide you through WhatsApp and live chat.
+ </p>
+
+        
+        <div id="readmore">
+            <p>We make shopping easier by understanding what you're looking for and why—and suggesting the best options for you. Once you make a purchase, we’ll track the order, and after it’s delivered, you’ll receive a reward based on the product category.
+            </p>
+            <p>Products you enquire about will appear in our Spotlight section. After purchase and delivery confirmation, you can redeem your earned coins as cash or coupons.
+            </p> 
+        </div>
+        
+        <div>
+            <a id="readmorebtn" class="btn">read more</a>
+        </div>
+    </div>
     
+    <<script>const readMoreBtn = document.getElementById('readmorebtn');
+        const readMoreContent = document.getElementById('readmore');
 
-  </div>
+        readMoreBtn.addEventListener('click', function() {
+            if (readMoreContent.style.display === "none" || readMoreContent.style.display === "") {
+                readMoreContent.style.display = "block";
+                readMoreBtn.textContent = "read less";
+            } else {
+                readMoreContent.style.display = "none";
+                readMoreBtn.textContent = "read more";
+            }
+        });</script>
+</section>
 
-  <div class="footer">
-    <p>&copy; 2025 PG Official TVM. All rights reserved.</p>
-  </div>
+<!-- about section ends -->
 
-  <script>
-    function searchProducts() {
-      const input = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.product-card');
-      cards.forEach(card => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        card.style.display = title.includes(input) ? 'block' : 'none';
-      });
-    }
-  </script>
 
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62384.33750598977!2d79.6009485!3d12.2468509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53387c15081497%3A0x20df12ae20e6e12e!2sKollar%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1729698332798!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <h3 data-aos="zoom-in">tell us something!</h3>
+                <input type="hidden" name="access_key" value="d6e4baed-9769-4f86-98b1-74cc4d05d99d">
+            <input type="hidden" name="redirect" value="https://youtube.com/@pg_official_tvm?si=gJ2pbzftg1__isZ0">
+            <input data-aos="zoom-in" type="text" name="name" placeholder="your name" class="box" required >
+            <input data-aos="zoom-in" name="email "type="email" placeholder="your email" class="box" required>
+            <input data-aos="zoom-in" name="number" type="number" placeholder="your number" class="box" required>
+            <textarea data-aos="zoom-in" name="message" placeholder="your message" class="box" cols="30" rows="10" required></textarea>
+            <input data-aos="zoom-in" type="submit" value="send message"  class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-down">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#spotlight"> <i class="fas fa-arrow-right"></i> Spotlight </a>
+            <a href="#about"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>contact us</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> pgofficialtvm@gmail.com</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Tindivanam, Tamilnadu, india - 604206</a>
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <h3>contact us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>mr.prasana govindarajalu</span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file links  -->
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      delay:400,
+      duration:800
+  });
+</script>
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="079077cf-7082-47da-9b95-f41056f6f850";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 </html>
