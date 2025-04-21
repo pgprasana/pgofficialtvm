@@ -4,19 +4,26 @@ let searchForm = document.querySelector('.search-form');
 let searchInput = document.querySelector('#search-btn');
 let navbar = document.querySelector('.navbar');
 
+// 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.notify-btn').forEach(btn => {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
 
-document.querySelectorAll('.notify-btn').forEach(btn => {
-    btn.addEventListener('click', function(event) {
-        event.preventDefault();
+            const productCode = this.dataset.code;
+            if (!productCode) {
+                alert("Product code not found.");
+                return;
+            }
 
-        const productCode = this.dataset.code;
-        const message = encodeURIComponent(`Set Price Alert for Product Code: ${productCode}`);
-        const whatsappURL = `https://wa.me/message/VAKVMJHWCTBTG1`;
+            const phoneNumber = "919442947264"; 
+            const message = encodeURIComponent(Set Price Alert for Product Code: ${productCode});
+            const whatsappURL = "https://wa.me/${919442947264}?text=${message}";
 
-        window.open(whatsappURL, '_blank');
+            window.open(whatsappURL, '_blank');
+        });
     });
 });
-
 
 // Toggle search form on click
 document.querySelector('#search-btn').onclick = () => {
