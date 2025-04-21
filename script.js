@@ -1,10 +1,6 @@
-
-
 let searchForm = document.querySelector('.search-form');
 let searchInput = document.querySelector('#search-btn');
 let navbar = document.querySelector('.navbar');
-
-
 
 // Toggle search form on click
 document.querySelector('#search-btn').onclick = () => {
@@ -54,7 +50,7 @@ window.onscroll = () => {
     if (top >= offset && top < offset + height) {
       navLinks.forEach(link => {
         link.classList.remove('active');
-        document.querySelector(`.header .navbar a[href*="${id}"]`).classList.add('active');
+        document.querySelector(.header .navbar a[href*="${id}"]).classList.add('active');
       });
     }
   });
