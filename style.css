@@ -295,7 +295,7 @@ section{
 }
 
 .spotlight .spotlight-slider .box:hover .image img{
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .spotlight .spotlight-slider .box .icons{
@@ -336,7 +336,7 @@ section{
 }
 
 .spotlight .spotlight-slider .box .content .sub{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     color:#fff;
 }
@@ -353,7 +353,7 @@ section{
 
     font-size: 2rem;
     font-weight: bolder;
-    color: var(--main-color);
+    color: #7FFFD4;
   
 }
 
