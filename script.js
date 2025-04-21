@@ -4,6 +4,20 @@ let searchForm = document.querySelector('.search-form');
 let searchInput = document.querySelector('#search-btn');
 let navbar = document.querySelector('.navbar');
 
+
+document.querySelectorAll('.notify-btn').forEach(btn => {
+    btn.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const productCode = this.dataset.code;
+        const message = encodeURIComponent(`Set Price Alert for Product Code: ${productCode}`);
+        const whatsappURL = `https://wa.me/message/VAKVMJHWCTBTG1`;
+
+        window.open(whatsappURL, '_blank');
+    });
+});
+
+
 // Toggle search form on click
 document.querySelector('#search-btn').onclick = () => {
   searchForm.classList.toggle('active');
