@@ -4,7 +4,7 @@ let searchForm = document.querySelector('.search-form');
 let searchInput = document.querySelector('#search-btn');
 let navbar = document.querySelector('.navbar');
 
-// 
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll('.notify-btn').forEach(btn => {
         btn.addEventListener('click', function (event) {
