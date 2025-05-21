@@ -323,8 +323,8 @@ section{
 }
 
 .products .products-slider .box .icons a:hover{
-    background: #141215;
-    color:#fff;
+    background: #fff;
+    color: #141215;
 }
 
 .products .products-slider .box .content{
