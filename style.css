@@ -323,7 +323,7 @@ section{
 }
 
 .products .products-slider .box .icons a:hover{
-    background: var(--main-color);
+    background: #141215;
     color:#fff;
 }
 
