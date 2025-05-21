@@ -284,7 +284,7 @@ section{
     overflow: hidden;
 }
 
-.products  .products-slider .box .image{
+.products .products-slider .box .image{
     height:40rem;
     width:100%;
     overflow: hidden;
@@ -316,8 +316,8 @@ section{
     line-height: 4.5rem;
     border-radius: 50%;
     font-size: 2rem;
-    color: #fff;
-    background:var(--black);
+    color:var(--black);
+    background: #fff;
     margin-top: 1rem;
     display: block;
 }
@@ -332,33 +332,23 @@ section{
 }
 
 .products .products-slider .box .content h3{
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: normal;
     color:#fff;
 }
 
-.products .products-slider .box .content .sub{
-    font-size: 1.75rem;
+.products .products-slider .box .content .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#fff;
+}
+
+.products .products-slider .box .content .price span{
+    font-size: 1.5rem;
     font-weight: normal;
-    color:#fff;
+    color:var(--main-color);
+    text-decoration: line-through;
 }
-
-.products .products-slider .box .content h1{
-    font-size: 2rem;
-    font-weight: bolder;
-    color:#fff;
-  
-}
-
-
-.products .products-slider .box .content h2{
-
-    font-size: 2rem;
-    font-weight: bolder;
-    color: lightgreen;
-  
-}
-
        .about {
             background: url(../image/about-bt.jpg) no-repeat;
             background-position: center;
