@@ -490,7 +490,29 @@ section{
 
 
 
+.policy .content{
+    padding: 1rem 0;
+}
 
+.policy .content h1{
+    font-size: 2rem;
+    font-weight: normal;
+    color:#fff;
+}
+
+.policy .content .p{
+    font-size: 1.75rem;
+    font-weight: normal;
+    color:#fff;
+}
+ 
+.policy .content h3{
+
+    font-size: 2rem;
+    font-weight: bolder;
+    color:#fff;
+  
+}
 
 
 
