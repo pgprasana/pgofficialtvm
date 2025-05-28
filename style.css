@@ -492,6 +492,7 @@ section{
 
 .policy .content{
     padding: 1rem 0;
+    font-color:#fff;
 }
 
 .policy .content h1{
@@ -510,7 +511,7 @@ section{
 
     font-size: 2rem;
     font-weight: bolder;
-    color:#fff;
+    font-color:#fff;
   
 }
 
